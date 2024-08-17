@@ -15,7 +15,7 @@ import { FiPhoneCall, FiEdit3, FiUpload } from "react-icons/fi";
 import { Link, useParams } from "react-router-dom";
 import { companies, jobs } from "../utils/data";
 import { CustomButton, JobCard, Loading, TextInput } from "../components";
-import { handleFileUpload, apiRequest } from "../utils/index"; // Importing missing functions
+import { handleFileUpload, apiRequest } from "../utils/index";
 import { Login } from "../redux/userSlice";
 
 const CompanyForm = ({ open, setOpen }) => {
@@ -64,7 +64,8 @@ const CompanyForm = ({ open, setOpen }) => {
           status: "success",
           message: res.message,
         });
-        dispatch(Login(data));
+        const newData = { token: res?.token, ...res?.user };
+        dispatch(Login(newData));
         localStorage.setItem("userInfo", JSON.stringify(data));
 
         setTimeout(() => {

@@ -126,7 +126,7 @@ export const updateCompanyProfile = async (req, res, next) => {
 
     res.status(200).json({
       success: true,
-      message: "Company Profile Updated SUccessfully",
+      message: "Company Profile Updated Successfully",
       company,
       token,
     });
@@ -180,10 +180,10 @@ export const getCompanies = async (req, res, next) => {
 
     // SORTING
     if (sort === "Newest") {
-      queryResult = queryResult.sort("-createdAt");
+      queryResult = queryResult.sort("createdAt");
     }
     if (sort === "Oldest") {
-      queryResult = queryResult.sort("createdAt");
+      queryResult = queryResult.sort("-createdAt");
     }
     if (sort === "A-Z") {
       queryResult = queryResult.sort("name");
@@ -238,10 +238,10 @@ export const getCompanyJobListing = async (req, res, next) => {
     let sorting;
     //sorting || another way
     if (sort === "Newest") {
-      sorting = "-createdAt";
+      sorting = "createdAt";
     }
     if (sort === "Oldest") {
-      sorting = "createdAt";
+      sorting = "-createdAt";
     }
     if (sort === "A-Z") {
       sorting = "name";
