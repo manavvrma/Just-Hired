@@ -85,7 +85,7 @@ const JobDetail = () => {
 
                   <span className="text-base">{job?.location}</span>
 
-                  <span className="text-base text-blue-600">
+                  <span className="text-base text-red-600">
                     {job?.company?.name}
                   </span>
 
@@ -96,7 +96,7 @@ const JobDetail = () => {
               </div>
 
               <div className="">
-                <AiOutlineSafetyCertificate className="text-3xl text-blue-500" />
+                <AiOutlineSafetyCertificate className="text-3xl text-red-500" />
               </div>
             </div>
 
@@ -178,7 +178,7 @@ const JobDetail = () => {
               ) : (
                 <>
                   <div className="mb-6 flex flex-col">
-                    <p className="text-xl text-blue-600 font-semibold">
+                    <p className="text-xl text-red-600 font-semibold">
                       {job?.company?.name}
                     </p>
                     <span className="text-base">{job?.company?.location}</span>

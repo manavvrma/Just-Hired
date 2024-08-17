@@ -197,7 +197,7 @@ const FindJobs = () => {
               <CustomButton
                 onClick={handleShowMore}
                 title="Load More"
-                containerStyles={`text-blue-600 py-1.5 px-5 focus:outline-none hover:bg-blue-700 hover:text-white rounded-full text-base border border-blue-600`}
+                containerStyles={`text-red-600 py-1.5 px-5 focus:outline-none hover:bg-red-700 hover:text-white rounded-full text-base border border-red-600`}
               />
             </div>
           )}

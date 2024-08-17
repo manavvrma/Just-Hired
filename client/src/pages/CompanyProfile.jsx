@@ -170,7 +170,7 @@ const CompanyForm = ({ open, setOpen }) => {
                         About Company
                       </label>
                       <textarea
-                        className="rounded border border-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-base px-4 py-2 resize-none"
+                        className="rounded border border-gray-400 focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 text-base px-4 py-2 resize-none"
                         rows={4}
                         cols={6}
                         {...register("about", {
@@ -194,7 +194,7 @@ const CompanyForm = ({ open, setOpen }) => {
                       ) : (
                         <CustomButton
                           type="submit"
-                          containerStyles="inline-flex justify-center rounded-md border border-transparent bg-blue-600 px-8 py-2 text-sm font-medium text-white hover:bg-[#1d4fd846] hover:text-[#1d4fd8] focus:outline-none "
+                          containerStyles="inline-flex justify-center rounded-md border border-transparent bg-red-600 px-8 py-2 text-sm font-medium text-white hover:bg-[#1d4fd846] hover:text-[#1d4fd8] focus:outline-none "
                           title={"Submit"}
                         />
                       )}
@@ -289,7 +289,7 @@ const CompanyProfile = () => {
 
           <div className="flex flex-col items-center mt-10 md:mt-0">
             <span className="text-xl">{info?.jobPosts?.length}</span>
-            <p className="text-blue-600 ">Job Post</p>
+            <p className="text-red-600 ">Job Post</p>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ const UserForm = ({ open, setOpen }) => {
   });
   const dispatch = useDispatch();
   const [profileImage, setProfileImage] = useState("");
-  const [uploadCv, setUploadCv] = useState("");
+  // const [uploadCv, setUploadCv] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onSubmit = async (data) => {
@@ -176,7 +176,7 @@ const UserForm = ({ open, setOpen }) => {
                         />
                       </div>
 
-                      <div className="w-1/2">
+                      {/* <div className="w-1/2">
                         <label className="text-gray-600 text-sm mb-1">
                           Resume
                         </label>
@@ -184,7 +184,7 @@ const UserForm = ({ open, setOpen }) => {
                           type="file"
                           onChange={(e) => setUploadCv(e.target.files[0])}
                         />
-                      </div>
+                      </div> */}
                     </div>
 
                     <div className="flex flex-col">

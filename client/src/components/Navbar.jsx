@@ -28,7 +28,7 @@ function MenuList({ user, onClick }) {
               <p className="text-sm font-semibold">
                 {user?.firstName ?? user?.name}
               </p>
-              <span className="text-sm text-blue-600">
+              <span className="text-sm text-red-600">
                 {user?.jobTitle ?? user?.email}
               </span>
             </div>
@@ -63,7 +63,7 @@ function MenuList({ user, onClick }) {
                       user?.accountType ? "user-profile" : "company-profile"
                     }`}
                     className={`${
-                      active ? "bg-blue-500 text-white" : "text-gray-900"
+                      active ? "bg-red-500 text-white" : "text-gray-900"
                     } group flex w-full items-center rounded-md p-2 text-sm`}
                     onClick={onClick}
                   >
@@ -83,7 +83,7 @@ function MenuList({ user, onClick }) {
                   <button
                     onClick={() => handleLogout()}
                     className={`${
-                      active ? "bg-blue-500 text-white" : "text-gray-900"
+                      active ? "bg-red-500 text-white" : "text-gray-900"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     <AiOutlineLogout
@@ -195,7 +195,7 @@ const Navbar = () => {
               <a href="/user-auth">
                 <CustomButton
                   title="Sign In"
-                  containerStyles={`text-blue-600 py-1.5 px-5 focus:outline-none hover:bg-blue-700 hover:text-white rounded-full text-base border border-blue-600`}
+                  containerStyles={`text-red-600 py-1.5 px-5 focus:outline-none hover:bg-red-700 hover:text-white rounded-full text-base border border-red-600`}
                 />
               </a>
             ) : (
