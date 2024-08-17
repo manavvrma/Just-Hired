@@ -21,7 +21,7 @@ function Layout() {
     <Outlet />
   ) : (
     <Navigate
-      to="https://just-hired-api.vercel.app/user-auth"
+      to="/user-auth"
       state={{ from: location }}
       replace
     />
