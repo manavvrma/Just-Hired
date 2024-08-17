@@ -20,7 +20,11 @@ function Layout() {
   return user?.token ? (
     <Outlet />
   ) : (
-    <Navigate to="/user-auth" state={{ from: location }} replace />
+    <Navigate
+      to="https://just-hired-api.vercel.app/user-auth"
+      state={{ from: location }}
+      replace
+    />
   );
 }
 
